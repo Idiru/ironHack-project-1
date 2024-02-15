@@ -1,12 +1,6 @@
 class Card {
-
-    constructor(stats){
-        this.stats = stats
-
-        /*
-
-
-        */
-    }
-
+  constructor(name, stats) {
+    this.name = name;
+    this.stats = stats[0];
+  }
 }

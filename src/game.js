@@ -1,7 +1,10 @@
 class Game {
+  constructor() {
+  }
 
-    constructor(){
-        this.cards = cardGenerator()
-    }
+  takeDecision() {
+    const choice = prompt("Take a decision (L or R)");
+    return choice;
+  }
 
 }
