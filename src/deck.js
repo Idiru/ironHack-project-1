@@ -34,7 +34,30 @@ const cardsStats = [
       }  
  
     },
+
+    {
+      id: 2, 
+      name: "card 3",
+      stats:{
+        swipeLeft: {
+            religion: 1,
+            money: -1,
+            nextCardId: 2
+          },
+          swipeRight: {
+            religion: 1,
+            money: -1,
+            nextCardId: 2
+          },
+      }  
+ 
+    },
   ];
+
+const currentCardDisplay = document.getElementsByClassName("current-card-name")
+
+
+//const currentCardDisplay = document.getElementsByClassName("current-card-name")
 
 class Deck { //A new class to have a deck of cards
     constructor() {
@@ -49,9 +72,11 @@ class Deck { //A new class to have a deck of cards
           this.cards.push(new Card(stat)) //We create a structured Card object that we pushed into a global list of cards
         })
         this.currentCard = this.cards[0] //We define the current card
+        currentCardDisplay[0].innerHTML = this.currentCard.name 
     }
     
     selectCard(choice) {
       this.currentCard = this.cards[this.currentCard.stats[choice].nextCardId] //We update the current card based on the decision of the player and the card characteristics 
+      currentCardDisplay[0].innerHTML = this.currentCard.name 
     }
 }
