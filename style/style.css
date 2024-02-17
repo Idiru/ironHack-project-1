@@ -31,9 +31,17 @@ body {
 .container-card {
   background-color: #e9e8dc;
 }
+
+.container-card-borders {
+  margin: 10px;
+  border-radius: 15px;
+  border: 1px solid #4b280c;
+  height: 411px;
+}
+
 .card {
   width: 243.912px;
-  height: 450px;
+  height: 438px;
   margin: 20px 35px;
   border-radius: 15px;
   background: #e3cbb1;
@@ -44,10 +52,9 @@ body {
 }
 
 .card-image {
-  border-radius: 15px 15px 0px 0px;
-  border: 1px solid #4b280c;
+  border-radius: 14px 14px 0px 0px;
   background-color: red;
-  height: 200px;
+  height: 123.183px;
   background: url("/images/cuban-military.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,9 +92,8 @@ body {
 }
 
 .container-card-answer p {
-    padding: 15px 7px;
+  padding: 15px 7px;
 }
-
 
 .container-rounds {
   display: flex;
