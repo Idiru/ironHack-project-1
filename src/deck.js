@@ -13,15 +13,19 @@ const card1 = [
     },
   ];
 
-// Create a player
-
-// Create a game
-const game = new Game();
-
-// Create a card
-const card = new Card(0, "test", card1)
-
-game.takeDecision(card)
 
 
 
+class Deck {
+    constructor(cards) {
+        this.cards = cards
+      }
+    
+    selectCard() {
+
+        // Recevoir un array avec des id 
+        //
+        const selectedCard = 0
+        return  
+    }
+}

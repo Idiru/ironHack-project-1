@@ -5,8 +5,10 @@ class Player {
         this.money = 50
     }   
 
-    impactCharacteristics(card) {
-        this.religion += card.swipeLeft.religion
+    impactCharacteristics(choice, card) {
+        console.log(choice)
+        this.religion += card.stats[choice].religion
+        this.money += card.stats[choice].money
         return this
       }
 
