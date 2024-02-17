@@ -24,12 +24,12 @@ const cardsStats = [
         swipeLeft: {
             religion: 1,
             money: -1,
-            nextCardId: 1
+            nextCardId: 2
           },
           swipeRight: {
             religion: 1,
             money: -1,
-            nextCardId: 1
+            nextCardId: 2
           },
       }  
  
@@ -45,13 +45,13 @@ class Deck { //A new class to have a deck of cards
 
 
     initialize() { //A method to initialize the deck base on an array of cards
-        cardsStats.forEach(stat => {
-          this.cards.push(new Card(stat))
+        cardsStats.forEach(stat => { //We go trough the array with all the characteristics of the cards
+          this.cards.push(new Card(stat)) //We create a structured Card object that we pushed into a global list of cards
         })
-        this.currentCard = this.cards[0]
+        this.currentCard = this.cards[0] //We define the current card
     }
     
-    selectCard() {
-      
+    selectCard(choice) {
+      this.currentCard = this.cards[this.currentCard.stats[choice].nextCardId] //We update the current card based on the decision of the player and the card characteristics 
     }
 }
