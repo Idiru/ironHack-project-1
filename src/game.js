@@ -1,5 +1,5 @@
 const player = new Player()
-
+const deck = new Deck()
 class Game {
   constructor() {
     this.currentChoice = null
@@ -11,7 +11,6 @@ class Game {
         console.log("Left key pressed");
         this.currentChoice = "swipeLeft"
         player.impactCharacteristics(this.currentChoice, card)
-
 
       } else if (event.key == "ArrowRight") {
         console.log("Right key pressed");

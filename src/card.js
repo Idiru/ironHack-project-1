@@ -1,7 +1,7 @@
-class Card {
-  constructor(id, name, stats) {
-    this.id = id
-    this.name = name;
-    this.stats = stats[0];
+class Card { //A class to create a card
+  constructor(stat) {
+    this.id = stat.id
+    this.name = stat.name;
+    this.stats = stat.stats;
   }
 }
