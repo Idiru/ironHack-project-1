@@ -3,19 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <ul>
-      <li><strong>Current card: </strong><span class="current-card-name"></span></li>
-      <li>
-        <strong>Player characteristics:</strong>
-        <ul>
-          <li>Religion: <span class="religion"></span></li>
-          <li>Money: <span class="money"></span></li>
-        </ul>
-      </li>
-    </ul>
+    <div class="container">
+      <div class="container-characteristics">
+        <div class="religion">
+          <p>10%<br />Religion</p>
+        </div>
+        <div class="military">
+          <p>55%<br />Military</p>
+        </div>
+        <div class="Communism">
+          <p>28%<br />Communsim</p>
+        </div>
+        <div class="Capitalism">
+          <p>80%<br />Capitalism</p>
+        </div>
+      </div>
+      <div class="container-card">
+        <div class="card">
+          <div class="card-image"></div>
+          <div class="container-card-content">
+            <h1 class="card-title">Creation of a caserne</h1>
+            <p class="card-description">
+              El Presidente, even our brave soldiers need a roof! A new caserne
+              means more boots to march and less chickens to dodge. Let's build
+              it! ¡Vamos!
+            </p>
+            <div class="container-answers">
+              <div class="container-card-answer answer-1">
+                <p>
+                  ¡Claro que sí, General! We'll build barracks so grand, our
+                  enemies will surrender in envy!
+                </p>
+              </div>
+              <div class="container-card-answer answer-2">
+                <p>
+                  Imposible General! The vault is emptier than a politician's
+                  promises pre-election
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-rounds">
+          <h2 class="rounds">Round: 2/10</h2>
+        </div>
+      </div>
+    </div>
 
     <script src="src/card.js"></script>
     <script src="src/deck.js"></script>
