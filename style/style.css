@@ -20,11 +20,54 @@ p {
     font-family: Inika;
 
 }
-.container {
+
+/* Starting screen */
+.container-starting-game-screen {
+  background-color:#4b280c;
+  position: fixed;
+  width: 320px;
+  height: 568px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.starting-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Losing screen */
+.container-lost-game-screen {
+  background-color:#4b280c;
+  position: fixed;
+  width: 320px;
+  height: 568px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Winning screen */
+.container-win-game-screen {
+  background-color:#4b280c;
+  position: fixed;
+  width: 320px;
+  height: 568px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main screen */
+.container {
+  display: none;
   flex-flow: column;
   width: 320px;
   height: 568px;
+
 }
 
 .container-characteristics,
@@ -135,3 +178,5 @@ p {
   font-family: "Inknut Antiqua";
   font-weight: 400;
 }
+
+

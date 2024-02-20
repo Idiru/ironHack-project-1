@@ -9,7 +9,7 @@ const cardsStats = [
     stats: {
       swipeLeft: {
         religion: 1,
-        military: -1,
+        military: -100,
         communism: 1,
         capitalism: -1,
         nextCardId: 1,
@@ -34,7 +34,7 @@ const cardsStats = [
     stats: {
       swipeLeft: {
         religion: 1,
-        military: -1,
+        military: -100,
         communism: 1,
         capitalism: -1,
         nextCardId: 2,

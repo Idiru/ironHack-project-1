@@ -2,6 +2,7 @@
 const game = new Game();
 
 game.takeDecision()
+game.startGame()
 
 
 
