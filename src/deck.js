@@ -3,7 +3,7 @@ const cardsStats = [
     id: 0,
     name: "Creation of a caserne",
     description: "El Presidente, even our brave soldiers need a roof! A new caserne means more boots to march and less chickens to dodge. Let's build it! ¡Vamos!",
-    image: "/images/cuban-military.jpg",
+    image: "./images/cuban-military.jpg",
     answer1: "¡Claro que sí, General! We'll build barracks so grand, our enemies will surrender in envy!",
     answer2: "Imposible General! The vault is emptier than a politician's promises pre-election",
     stats: {
