@@ -33,14 +33,14 @@ const cardsStats = [
     answer2: "Answer 2",
     stats: {
       swipeLeft: {
-        religion: 1,
+        religion: 20,
         military: -100,
         communism: 1,
         capitalism: -1,
         nextCardId: 2,
       },
       swipeRight: {
-        religion: 1,
+        religion: 20,
         military: -1,
         communism: 1,
         capitalism: -1,
@@ -58,17 +58,17 @@ const cardsStats = [
     answer2: "Answer 2",
     stats: {
       swipeLeft: {
-        religion: 1,
+        religion: 20,
         military: -1,
         communism: 1,
         capitalism: -1,
         nextCardId: 2,
       },
       swipeRight: {
-        religion: 1,
+        religion: -20,
         military: -1,
         communism: 1,
-        capitalism: -1,
+        capitalism: 30,
         nextCardId: 2,
       },
     },
