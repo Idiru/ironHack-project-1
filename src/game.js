@@ -53,15 +53,6 @@ class Game {
       winningScreen.style.display = "flex"
     }
   }
-
-  fillShape(percentage) {
-    const maxHeight = 30; // Hauteur totale de la forme SVG
-    const fillElement = document.getElementById('fillShape');
-    const fillHeight = (maxHeight * percentage) / 100;
-    fillElement.setAttribute('height', fillHeight);
-    // Ajuster la position y pour remplir de bas en haut
-    fillElement.setAttribute('y', 30 - fillHeight); // Assurez-vous que cela correspond à la hauteur de votre SVG
-}
   
 }
 

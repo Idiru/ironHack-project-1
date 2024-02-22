@@ -8,17 +8,17 @@ const cardsStats = [
     answer2: "Imposible General! The vault is emptier than a politician's promises pre-election",
     stats: {
       swipeLeft: {
-        religion: 1,
-        military: -100,
-        communism: 1,
-        capitalism: -1,
+        religion: 0,
+        military: 20,
+        communism: 10,
+        capitalism: -10,
         nextCardId: 1,
       },
       swipeRight: {
-        religion: 1,
-        military: -1,
-        communism: 1,
-        capitalism: -1,
+        religion: 0,
+        military: -20,
+        communism: -10,
+        capitalism: 10,
         nextCardId: 1,
       },
     },
@@ -26,24 +26,24 @@ const cardsStats = [
 
   {
     id: 1,
-    name: "Card 2",
-    description: "Lol",
+    name: "Fiesta Nacional",
+    description: "El Presidente, the people crave celebration! A grand Fiesta Nacional will ignite joy and camaraderie amongst our citizens. Shall we dance in the streets or save the rum for another day?",
     image: "",
-    answer1: "Answer 1",
-    answer2: "Answer 2",
+    answer1: "¡Sí, let the music play! We'll host a fiesta that'll make the sun envious it has to set!",
+    answer2: "Ah, the only salsa tonight will be on rice. Save the fiesta funds; our treasury isn't a piñata!",
     stats: {
       swipeLeft: {
-        religion: 20,
-        military: -100,
-        communism: 1,
-        capitalism: -1,
+        religion: 5,
+        military: 20,
+        communism: 10,
+        capitalism: 10,
         nextCardId: 2,
       },
       swipeRight: {
-        religion: 20,
-        military: -1,
-        communism: 1,
-        capitalism: -1,
+        religion: -5,
+        military: -20,
+        communism: -10,
+        capitalism: -5,
         nextCardId: 2,
       },
     },
@@ -51,28 +51,152 @@ const cardsStats = [
 
   {
     id: 2,
-    name: "Card 3",
-    description: "Lol",
+    name: "Tropican Coffee Debate",
+    description: "The world craves our Tropican coffee, but our beans are a national treasure! Should we export our finest brews or keep the rich aroma for our citizens?",
     image: "",
-    answer1: "Answer 1",
-    answer2: "Answer 2",
+    answer1: `To the world, we say, "Enjoy our coffee!" Let's export and watch our economy perk up like a morning cafecito!`,
+    answer2: "No, our coffee stays in Tropico! Let our people wake up to the smell of prosperity, not exports!",
     stats: {
       swipeLeft: {
-        religion: 20,
-        military: -1,
-        communism: 1,
-        capitalism: -1,
-        nextCardId: 2,
+        religion: 0,
+        military: 0,
+        communism: -10,
+        capitalism: 10,
+        nextCardId: 3,
       },
       swipeRight: {
-        religion: -20,
-        military: -1,
-        communism: 1,
-        capitalism: 30,
-        nextCardId: 2,
+        religion: 0,
+        military: 0,
+        communism: 10,
+        capitalism: -10,
+        nextCardId: 3,
       },
     },
   },
+
+  {
+    id: 3,
+    name: "Rum Ration Conundrum",
+    description: "People are striking Presidente – they wish for rum rations to flow like our glorious waterfalls. Should we fill their cups to raise their spirits or keep the barrels corked for sale?",
+    image: "",
+    answer1: "Pour the rum, and let their spirits soar! Happy citizens are the heart of Tropico, even if a little wobbly.",
+    answer2: "Not a drop to drink! Our rum is more valuable than liquid gold on the global market.",
+    stats: {
+      swipeLeft: {
+        religion: -20,
+        military: 5,
+        communism: 20,
+        capitalism: -40,
+        nextCardId: 4,
+      },
+      swipeRight: {
+        religion: 5,
+        military: -20,
+        communism: 40,
+        capitalism: 20,
+        nextCardId: 4,
+      },
+    },
+  },
+
+  {
+    id: 4,
+    name: "Papaya Protocol",
+    description: `El Presidente, Tropico's papayas are rumored to hold the secret to longevity! Do we export our "Fountain of Youth" fruit, or keep the elixir for ourselves to ensure a long rule?`,
+    image: "",
+    answer1: "Spread the seeds of youth! Our papayas will promise prosperity and a zest for life across the globe!",
+    answer2: "Preserve our papayas for Tropicanos only. We must secure the secret to long life and long rule!",
+    stats: {
+      swipeLeft: {
+        religion: -40,
+        military: 0,
+        communism: -20,
+        capitalism: 40,
+        nextCardId: 5,
+      },
+      swipeRight: {
+        religion: 20,
+        military: 0,
+        communism: 10,
+        capitalism: -40,
+        nextCardId: 5,
+      },
+    },
+  },
+
+  {
+    id: 5,
+    name: "Salsa Switcheroo",
+    description: "Our island rhythms are at risk! The annual salsa festival is approaching, but there's a vinyl shortage. Should we import expensive records or switch to reggaeton this year?",
+    answer1: "Keep the salsa spinning! We'll import what we need. Our traditions are worth every peso!",
+    answer2: "Time to shake it up! Let the reggaeton rhythms rule this year's festival. ¡Que comience la fiesta!",
+    stats: {
+      swipeLeft: {
+        religion: 0,
+        military: 10,
+        communism: 10,
+        capitalism: 10,
+        nextCardId: 6,
+      },
+      swipeRight: {
+        religion: -100,
+        military: -100,
+        communism: -100,
+        capitalism: -100,
+        nextCardId: 6,
+      },
+    },
+  },
+
+  {
+    id: 6,
+    name: "Diogo's Divine Dilemma",
+    description: "El Presidente, a wandering prophet named Diogo has docked at our shores, claiming he can teach fish to sing! Do we welcome his aquatic choir, or should this fish-whisperer sail away?",
+    answer1: "Let the fish sing! If Diogo's as good as his word, we'll have the world's first underwater concert.",
+    answer2: "Fish are for frying, not for hymns. Send Diogo packing before we have a piscatorial uprising!",
+    stats: {
+      swipeLeft: {
+        religion: 20,
+        military: -20,
+        communism: 0,
+        capitalism: 0,
+        nextCardId: 7,
+      },
+      swipeRight: {
+        religion: -20,
+        military: 20,
+        communism: 0,
+        capitalism: 0,
+        nextCardId: 8,
+      },
+    },
+  },
+
+
+  {
+    id: 7,
+    name: " Diogo's Volcanic Venture",
+    description: "I, Diogo, have been divinely inspired to propose a festival on the volcano's edge. They say dancing on the brink will please the fire spirits and ensure decades of prosperity... or perhaps awaken a fiery fury.",
+    answer1: "Let's dance with the fire spirits! A volcano festival will ignite our destiny.",
+    answer2: "Diogo, your fiery heart might melt even the sternest resolve, but we shall keep our festivities on safer ground.",
+    stats: {
+      swipeLeft: {
+        religion: -100,
+        military: -100,
+        communism: -100,
+        capitalism: -100,
+        nextCardId: 8,
+      },
+      swipeRight: {
+        religion: -10,
+        military: 10,
+        communism: 0,
+        capitalism: 0,
+        nextCardId: 9,
+      },
+    },
+  },
+
 ];
 
 
