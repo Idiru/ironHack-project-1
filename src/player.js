@@ -12,9 +12,23 @@ class Player {
     this.capitalism = 50;
   }
 
+  checkRange(){
+
+    if (this.religion > 100) this.religion = 100;
+    if (this.military > 100) this.military = 100;
+    if (this.communism > 100) this.communism = 100;
+    if (this.capitalism > 100) this.capitalism = 100;
+
+    console.log("Round: ")
+    console.log(this.religion)
+    console.log(this.military)
+    console.log(this.communism)
+    console.log(this.capitalism)
+
+  }
+
   impactCharacteristics(choice, card) {
     //Method to impact the player's characteristics based on the choice and the current card's characteristics
-    console.log(choice);
     this.religion += card.stats[choice].religion; //We impact all characteristics based on the choice
     this.military += card.stats[choice].military;
     this.communism += card.stats[choice].communism;
@@ -24,11 +38,11 @@ class Player {
   }
 
   checkCharacteristics(){
-    if(this.religion < 0 || this.military < 0 || this.communism < 0 || this.capitalism < 0){
+    if(this.religion <= 0 || this.military <= 0 || this.communism <= 0 || this.capitalism <= 0){
         mainScreen.style.display = "none"
         losingScreen.style.display = "flex"
     } else {
-        console.log("you can continue")
+        return
     }
   }
 
@@ -67,14 +81,20 @@ class Player {
         const maxHeight = characteristic.maxHeight; // Hauteur totale de la forme SVG
         const fillElement = document.querySelector(characteristic.cssClass);
         const fillHeight = (maxHeight * characteristic.percentage) / 100;
-        console.log(maxHeight)
-        console.log(fillElement)
-        console.log(fillHeight)
         fillElement.setAttribute('height', fillHeight);
         // Ajuster la position y pour remplir de bas en haut
         fillElement.setAttribute('y', 30 - fillHeight); // Assurez-vous que cela correspond à la hauteur de votre SVG
     });
     
+}
+
+gimmeMore(){
+    this.religion += 100
+    this.military +=  100
+    this.communism +=  100
+    this.capitalism +=  100
+    player.fillShape()
+    return "done"
 }
   
 }

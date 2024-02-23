@@ -17,7 +17,6 @@ class Game {
   takeDecision() { // Allow the user to take a decision and to impact the player's characteristics 
     document.addEventListener("click", (event) => {
       if (event.target.id === "first" || event.target.classList.contains("answer-1") ){
-        console.log("Answer 1")
         this.currentChoice = "swipeLeft" //We return the related choice
         player.impactCharacteristics(this.currentChoice, deck.currentCard) //We impact the player's characteristics based on the choice
         deck.selectCard(this.currentChoice) //We change the selected card
@@ -25,14 +24,14 @@ class Game {
         round[0].innerHTML = this.round
       }
       else if (event.target.id === "second" || event.target.classList.contains("answer-2")){
-        console.log("Answer 2")
         this.currentChoice = "swipeRight"
         player.impactCharacteristics(this.currentChoice, deck.currentCard)
         deck.selectCard(this.currentChoice)
         this.round += 1
         round[0].innerHTML = this.round
       }
-      player.checkCharacteristics() // Check if one of the characteristics is under 0 to display the lost screen
+      player.checkCharacteristics()
+      player.checkRange() // Check if one of the characteristics is under 0 to display the lost screen
       this.checkRounds()
     });
 
@@ -48,7 +47,7 @@ class Game {
   }
 
   checkRounds(){
-    if(this.round === 10) {
+    if(this.round === 9) {
       mainScreen.style.display = "none"
       winningScreen.style.display = "flex"
     }

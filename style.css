@@ -61,6 +61,14 @@ p {
   justify-content: center;
 }
 
+/* End screen */
+.end-screen {
+  color: #e9e8dc;
+  font-size: 15px;
+  font-family: "Inknut Antiqua";
+  font-weight: 400;
+}
+
 /* Main screen */
 .container {
   display: none;
