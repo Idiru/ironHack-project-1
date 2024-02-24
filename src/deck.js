@@ -2,7 +2,7 @@ const cardsStats = [
   {
     id: 0,
     name: "Creation of a caserne",
-    description: "El Presidente, even our brave soldiers need a roof! A new caserne means more boots to march and less chickens to dodge. Let's build it! ¡Vamos!",
+    description: "Presidente, even our brave soldiers need a roof! A new caserne means more boots to march and less chickens to dodge. Let's build it! ¡Vamos!",
     image: "./images/cuban-military.jpg",
     answer1: "¡Claro que sí, General! We'll build barracks so grand, our enemies will surrender in envy!",
     answer2: "Imposible General! The vault is emptier than a politician's promises pre-election",
@@ -27,7 +27,7 @@ const cardsStats = [
   {
     id: 1,
     name: "Fiesta Nacional",
-    description: "El Presidente, the people crave celebration! A grand Fiesta Nacional will ignite joy and camaraderie amongst our citizens. Shall we dance in the streets or save the rum for another day?",
+    description: "Presidente, the people crave celebration! A grand Fiesta Nacional will ignite joy and camaraderie amongst our citizens. Shall we dance in the streets or save the rum for another day?",
     image: "./images/communist-leader.jpg",
     answer1: "¡Sí, let the music play! We'll host a fiesta that'll make the sun envious it has to set!",
     answer2: "Ah, the only salsa tonight will be on rice. Save the fiesta funds; our treasury isn't a piñata!",
@@ -102,7 +102,7 @@ const cardsStats = [
   {
     id: 4,
     name: "Papaya Protocol",
-    description: `El Presidente, Tropico's papayas are rumored to hold the secret to longevity! Do we export our "Fountain of Youth" fruit, or keep the elixir for ourselves to ensure a long rule?`,
+    description: `Presidente, Tropico's papayas are rumored to hold the secret to longevity! Do we export our "Fountain of Youth" fruit, or keep the elixir for ourselves to ensure a long rule?`,
     image: "./images/capitalist-leader.jpg",
     answer1: "Spread the seeds of youth! Our papayas will promise prosperity and a zest for life across the globe!",
     answer2: "Preserve our papayas for Tropicanos only. We must secure the secret to long life and long rule!",
@@ -152,7 +152,7 @@ const cardsStats = [
   {
     id: 6,
     name: "Diogo's Divine Dilemma",
-    description: "El Presidente, a wandering prophet named Diogo has docked at our shores, claiming he can teach fish to sing! Do we welcome his aquatic choir, or should this fish-whisperer sail away?",
+    description: "Presidente, a wandering prophet named Diogo has docked at our shores, claiming he can teach fish to sing! Do we welcome his aquatic choir, or should this fish-whisperer sail away?",
     image: "./images/cuban-military.jpg",
     answer1: "Let the fish sing! If Diogo's as good as his word, we'll have the world's first underwater concert.",
     answer2: "Fish are for frying, not for hymns. Send Diogo packing before we have a piscatorial uprising!",
