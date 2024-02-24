@@ -47,7 +47,7 @@ class Game {
   }
 
   checkRounds(){
-    if(this.round === 9) {
+    if(this.round === 9 & player.religion >= 0 & player.military >= 0 & player.communism >= 0 & player.capitalism >= 0) {
       mainScreen.style.display = "none"
       winningScreen.style.display = "flex"
     }
