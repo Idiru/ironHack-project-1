@@ -12,19 +12,12 @@ class Player {
     this.capitalism = 50;
   }
 
-  checkRange(){
-
+  checkRange(){ //We check the score of all entities to ensure that we don't have a score higher than 100
+    //If the score is higher than 100, we define 100
     if (this.religion > 100) this.religion = 100;
     if (this.military > 100) this.military = 100;
     if (this.communism > 100) this.communism = 100;
     if (this.capitalism > 100) this.capitalism = 100;
-
-    console.log("Round: ")
-    console.log(this.religion)
-    console.log(this.military)
-    console.log(this.communism)
-    console.log(this.capitalism)
-
   }
 
   impactCharacteristics(choice, card) {
@@ -34,9 +27,9 @@ class Player {
     this.communism += card.stats[choice].communism;
     this.capitalism += card.stats[choice].capitalism;
     player.fillShape()
-    return this; // Maybe not needed
   }
 
+  //Check the Characteristics score to display the losing screen if needed
   checkCharacteristics(){
     if(this.religion <= 0 || this.military <= 0 || this.communism <= 0 || this.capitalism <= 0){
         mainScreen.style.display = "none"
@@ -46,6 +39,7 @@ class Player {
     }
   }
 
+  //Fill the characteristics shapes based on their scores 
   fillShape() {
     const characteristics = [
         {
@@ -78,16 +72,17 @@ class Player {
     ]
 
     characteristics.forEach(characteristic => {
-        const maxHeight = characteristic.maxHeight; // Hauteur totale de la forme SVG
+        const maxHeight = characteristic.maxHeight; // SVG height
         const fillElement = document.querySelector(characteristic.cssClass);
         const fillHeight = (maxHeight * characteristic.percentage) / 100;
         fillElement.setAttribute('height', fillHeight);
-        // Ajuster la position y pour remplir de bas en haut
-        fillElement.setAttribute('y', 30 - fillHeight); // Assurez-vous que cela correspond à la hauteur de votre SVG
+        // To fill the svg from the bottom to the top
+        fillElement.setAttribute('y', 30 - fillHeight);
     });
     
 }
 
+//Cheat code to win easily 
 gimmeMore(){
     this.religion += 100
     this.military +=  100

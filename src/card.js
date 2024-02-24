@@ -1,4 +1,4 @@
-class Card { //A class to create a card
+class Card { //A class to create a card with a specific structure
   constructor(stat) {
     this.id = stat.id
     this.name = stat.name;
