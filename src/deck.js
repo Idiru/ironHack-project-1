@@ -179,6 +179,7 @@ const cardsStats = [
     id: 7,
     name: " Diogo's Volcanic Venture",
     description: "I, Diogo, have been divinely inspired to propose a festival on the volcano's edge. They say dancing on the brink will please the fire spirits and ensure decades of prosperity... or perhaps awaken a fiery fury.",
+    image: "./images/religion-leader.jpg",
     answer1: "Let's dance with the fire spirits! A volcano festival will ignite our destiny.",
     answer2: "Diogo, your fiery heart might melt even the sternest resolve, but we shall keep our festivities on safer ground.",
     stats: {
@@ -203,6 +204,7 @@ const cardsStats = [
     id: 8,
     name: " Midnight Oil Dilemma",
     description: "Our brightest minds have invented a 'Midnight Oil' lamp that burns forever without refueling! It's a scientific marvel, but the night owls claim it steals the stars from the sky.",
+    image: "./images/capitalist-leader.jpg",
     answer1: "Let there be light! Innovation illuminates our path to the future.",
     answer2: "The stars have guided us for centuries. Keep the night sky sacred.",
     stats: {
