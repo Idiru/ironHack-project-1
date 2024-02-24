@@ -28,7 +28,7 @@ const cardsStats = [
     id: 1,
     name: "Fiesta Nacional",
     description: "El Presidente, the people crave celebration! A grand Fiesta Nacional will ignite joy and camaraderie amongst our citizens. Shall we dance in the streets or save the rum for another day?",
-    image: "",
+    image: "./images/communist-leader.jpg",
     answer1: "¡Sí, let the music play! We'll host a fiesta that'll make the sun envious it has to set!",
     answer2: "Ah, the only salsa tonight will be on rice. Save the fiesta funds; our treasury isn't a piñata!",
     stats: {
@@ -53,7 +53,7 @@ const cardsStats = [
     id: 2,
     name: "Tropican Coffee Debate",
     description: "The world craves our Tropican coffee, but our beans are a national treasure! Should we export our finest brews or keep the rich aroma for our citizens?",
-    image: "",
+    image: "./images/capitalist-leader.jpg",
     answer1: `To the world, we say, "Enjoy our coffee!" Let's export and watch our economy perk up like a morning cafecito!`,
     answer2: "No, our coffee stays in Tropico! Let our people wake up to the smell of prosperity, not exports!",
     stats: {
@@ -78,12 +78,12 @@ const cardsStats = [
     id: 3,
     name: "Rum Ration Conundrum",
     description: "People are striking Presidente – they wish for rum rations to flow like our glorious waterfalls. Should we fill their cups to raise their spirits or keep the barrels corked for sale?",
-    image: "",
+    image: "./images/religion-leader.jpg",
     answer1: "Pour the rum, and let their spirits soar! Happy citizens are the heart of Tropico, even if a little wobbly.",
     answer2: "Not a drop to drink! Our rum is more valuable than liquid gold on the global market.",
     stats: {
       swipeLeft: {
-        religion: -20,
+        religion: 20,
         military: 5,
         communism: 20,
         capitalism: -40,
@@ -103,7 +103,7 @@ const cardsStats = [
     id: 4,
     name: "Papaya Protocol",
     description: `El Presidente, Tropico's papayas are rumored to hold the secret to longevity! Do we export our "Fountain of Youth" fruit, or keep the elixir for ourselves to ensure a long rule?`,
-    image: "",
+    image: "./images/capitalist-leader.jpg",
     answer1: "Spread the seeds of youth! Our papayas will promise prosperity and a zest for life across the globe!",
     answer2: "Preserve our papayas for Tropicanos only. We must secure the secret to long life and long rule!",
     stats: {
@@ -128,6 +128,7 @@ const cardsStats = [
     id: 5,
     name: "Salsa Switcheroo",
     description: "Our island rhythms are at risk! The annual salsa festival is approaching, but there's a vinyl shortage. Should we import expensive records or switch to reggaeton this year?",
+    image: "./images/communist-leader.jpg",
     answer1: "Keep the salsa spinning! We'll import what we need. Our traditions are worth every peso!",
     answer2: "Time to shake it up! Let the reggaeton rhythms rule this year's festival. ¡Que comience la fiesta!",
     stats: {
@@ -152,6 +153,7 @@ const cardsStats = [
     id: 6,
     name: "Diogo's Divine Dilemma",
     description: "El Presidente, a wandering prophet named Diogo has docked at our shores, claiming he can teach fish to sing! Do we welcome his aquatic choir, or should this fish-whisperer sail away?",
+    image: "./images/cuban-military.jpg",
     answer1: "Let the fish sing! If Diogo's as good as his word, we'll have the world's first underwater concert.",
     answer2: "Fish are for frying, not for hymns. Send Diogo packing before we have a piscatorial uprising!",
     stats: {
@@ -228,6 +230,7 @@ const cardTitle = document.getElementsByClassName("card-title")
 const cardDescription = document.getElementsByClassName("card-description")
 const answer1 = document.getElementsByClassName("answer-1")
 const answer2 = document.getElementsByClassName("answer-2")
+const cardImage = document.getElementsByClassName("card-image")
 
 
 class Deck {
@@ -258,5 +261,9 @@ class Deck {
     cardDescription[0].innerHTML = this.currentCard.description;
     answer1[0].innerHTML = this.currentCard.answer1;
     answer2[0].innerHTML = this.currentCard.answer2;
+    cardImage[0].style.background = `url('${this.currentCard.image}')`
+    cardImage[0].style.backgroundRepeat = 'no-repeat';
+    cardImage[0].style.backgroundSize = 'cover';
+
   }
 }
